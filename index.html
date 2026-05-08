@@ -1,0 +1,37 @@
+import requests
+from bs4 import BeautifulSoup
+
+def get_imdb_bio(url):
+    # Headers to mimic a browser request
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    }
+
+    try:
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()
+        
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        # Extract Name
+        name = soup.find('h1').text.strip() if soup.find('h1') else "N/A"
+
+        # Extract Bio Text
+        # IMDb structures its bio sections within specific div classes
+        bio_content = soup.find('div', {'data-testid': 'sub-section-rich-text'})
+        bio_text = bio_content.get_text(separator='\n').strip() if bio_content else "Bio text not found."
+
+        print(f"Name: {name}")
+        print("-" * 20)
+        print(f"Biography:\n{bio_text}")
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+# The URL provided: Pedro Pascal's Bio
+target_url = "https://www.imdb.com/name/nm1580243/bio/"
+get_imdb_bio(target_url)
+<a href="mailto:Yesitsmariacote@gmail.com?subject=Meeting Request&body=Hi Maria,%0D%0A%0D%0AI would like to schedule a meeting to discuss..." 
+   style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-family: Arial, sans-serif;">
+   Book a Meeting
+</a>
