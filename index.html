@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cote de Pablo | Official Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+        body { background-color: #000; color: #fff; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-title { font-size: clamp(3rem, 10vw, 8rem); line-height: 0.9; }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed top-0 w-full z-50 flex justify-between items-center p-6 bg-black/80 backdrop-blur-md border-b border-zinc-800">
+        <h1 class="text-sm font-bold tracking-[0.4em] uppercase">Portfolio 2026</h1>
+        <div class="hidden md:flex space-x-8 text-xs uppercase tracking-widest text-zinc-400">
+            <a href="#about" class="hover:text-white transition">Biography</a>
+            <a href="#gallery" class="hover:text-white transition">Gallery</a>
+            <a href="#contact" class="hover:text-white transition">Contact</a>
+        </div>
+        <a href="mailto:Yesitsmariacote@gmail.com" class="text-xs bg-white text-black px-5 py-2 rounded-full font-bold uppercase tracking-tighter">Get in Touch</a>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center text-center pt-20">
+        <div class="px-4">
+            <p class="text-zinc-500 uppercase tracking-[0.5em] text-[10px] mb-4">Official Fan Project</p>
+            <h2 class="hero-title font-black mb-6 tracking-tighter uppercase">Cote de <br><span class="text-zinc-400">Pablo</span></h2>
+            <div class="h-1 w-20 bg-white mx-auto mb-8"></div>
+            <p class="max-w-md mx-auto text-zinc-400 text-sm uppercase tracking-widest leading-loose">Actress • Singer • Producer • Icon</p>
+        </div>
+    </section>
+
+    <section id="about" class="py-32 px-6 border-t border-zinc-900">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-xs font-bold text-zinc-500 uppercase tracking-[0.4em] mb-12">The Life Story</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <p class="text-2xl font-light leading-relaxed text-white">
+                    Maria José de Pablo Fernández, known professionally as Cote de Pablo, is a Chilean-American actress who captivated global audiences.
+                </p>
+                <p class="text-zinc-400 leading-relaxed">
+                    Born in 1979 in Santiago, Chile, she moved to Miami at a young age, later honing her craft at Carnegie Mellon University. Best known for her iconic portrayal of Ziva David on the CBS series NCIS, she has become a symbol of strength and talent in modern cinema.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="bg-zinc-950 py-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-between items-end mb-16">
+                <h3 class="text-3xl font-bold uppercase tracking-tighter">Featured Gallery</h3>
+                <p class="text-zinc-500 text-xs uppercase tracking-widest pb-1">NCIS & Portrait Collection</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="group">
+                    <div class="aspect-[4/5] bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 transition-transform duration-500 group-hover:scale-[1.02]">
+                        <img src="ncis1.jpg" alt="Cote de Pablo NCIS" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <p class="mt-4 text-[10px] uppercase tracking-widest text-zinc-600">NCIS: Ziva David Scene 01</p>
+                </div>
+                
+                <div class="group">
+                    <div class="aspect-[4/5] bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 transition-transform duration-500 group-hover:scale-[1.02]">
+                        <img src="ncis2.jpg" alt="Cote de Pablo NCIS" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <p class="mt-4 text-[10px] uppercase tracking-widest text-zinc-600">NCIS: Ziva David Scene 02</p>
+                </div>
+
+                <div class="group">
+                    <div class="aspect-[4/5] bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 transition-transform duration-500 group-hover:scale-[1.02]">
+                        <img src="cote1.jpg" alt="Cote de Pablo" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <p class="mt-4 text-[10px] uppercase tracking-widest text-zinc-600">Portrait Series 01</p>
+                </div>
+                
+                <div class="group">
+                    <div class="aspect-[4/5] bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 transition-transform duration-500 group-hover:scale-[1.02]">
+                        <img src="cote2.jpg" alt="Cote de Pablo" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <p class="mt-4 text-[10px] uppercase tracking-widest text-zinc-600">Portrait Series 02</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-40 text-center border-t border-zinc-900 bg-black">
+        <div class="px-6">
+            <h3 class="text-4xl md:text-6xl font-black mb-12 italic tracking-tighter text-white">Meet Cote de Pablo</h3>
+            <p class="text-zinc-500 uppercase tracking-widest text-xs mb-6">For professional inquiries and collaborations</p>
+            
+            <a href="mailto:Yesitsmariacote@gmail.com" class="inline-block group">
+                <span class="text-xl md:text-4xl font-light text-white group-hover:text-zinc-400 transition-colors underline underline-offset-[12px] decoration-zinc-700">
+                    Yesitsmariacote@gmail.com
+                </span>
+            </a>
+            
+            <div class="mt-32 pt-8 border-t border-zinc-900">
+                <p class="text-[10px] text-zinc-700 uppercase tracking-[0.5em]">© 2026 Academic Research Project</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
