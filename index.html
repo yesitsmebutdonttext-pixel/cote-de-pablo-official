@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cote de Pablo | Official Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+        body { background-color: #000; color: #fff; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-title { font-size: clamp(3rem, 10vw, 8rem); line-height: 0.9; }
+        .stat-box { border-left: 1px solid #27272a; padding-left: 1.5rem; }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed top-0 w-full z-50 flex justify-between items-center p-6 bg-black/80 backdrop-blur-md border-b border-zinc-800">
+        <h1 class="text-sm font-bold tracking-[0.4em] uppercase">Portfolio 2026</h1>
+        <div class="hidden md:flex space-x-8 text-xs uppercase tracking-widest text-zinc-400">
+            <a href="#about" class="hover:text-white transition">Biography</a>
+            <a href="#gallery" class="hover:text-white transition">Gallery</a>
+            <a href="#contact" class="hover:text-white transition">Contact</a>
+        </div>
+        <a href="mailto:Yesitsmariacote@gmail.com" class="text-xs bg-white text-black px-5 py-2 rounded-full font-bold uppercase tracking-tighter transition hover:bg-zinc-200">Get in Touch</a>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center text-center pt-20">
+        <div class="px-4">
+            <p class="text-zinc-500 uppercase tracking-[0.5em] text-[10px] mb-4">Official Artist Profile</p>
+            <h2 class="hero-title font-black mb-6 tracking-tighter uppercase">Cote de <br><span class="text-zinc-400">Pablo</span></h2>
+            <div class="h-1 w-20 bg-white mx-auto mb-8"></div>
+            <p class="max-w-md mx-auto text-zinc-400 text-sm uppercase tracking-widest leading-loose">Actress • Singer • Producer • Icon</p>
+        </div>
+    </section>
+
+    <section id="about" class="py-32 px-6 border-t border-zinc-900">
+        <div class="max-w-5xl mx-auto">
+            <h3 class="text-xs font-bold text-zinc-500 uppercase tracking-[0.4em] mb-16 text-center">Artist Profile</h3>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-24">
+                <div class="stat-box">
+                    <p class="text-[10px] uppercase text-zinc-500 tracking-widest mb-2">Born</p>
+                    <p class="text-xl font-light">Nov 12, 1979</p>
+                </div>
+                <div class="stat-box">
+                    <p class="text-[10px] uppercase text-zinc-500 tracking-widest mb-2">Age</p>
+                    <p class="text-xl font-light">46 Years</p>
+                </div>
+                <div class="stat-box">
+                    <p class="text-[10px] uppercase text-zinc-500 tracking-widest mb-2">Birthplace</p>
+                    <p class="text-xl font-light">Santiago, Chile</p>
+                </div>
+                <div class="stat-box">
+                    <p class="text-[10px] uppercase text-zinc-500 tracking-widest mb-2">Education</p>
+                    <p class="text-xl font-light">Carnegie Mellon</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+                <div class="space-y-8">
+                    <h4 class="text-4xl font-bold italic tracking-tighter uppercase">The Journey of an Icon</h4>
+                    <p class="text-xl font-light leading-relaxed text-zinc-300">
+                        Maria José de Pablo Fernández, known professionally as <strong>Cote de Pablo</strong>, is a multi-talented actress and singer who defined a generation of television drama.
+                    </p>
+                    <p class="text-zinc-400 leading-relaxed text-sm">
+                        Born in Santiago, Chile, she moved to Miami at age 10 and later studied music theater at Carnegie Mellon University. Her global breakthrough came in 2005 as Ziva David on NCIS, a role that earned her an ALMA Award and made her a symbol of strength for fans worldwide. Beyond acting, she is an accomplished vocalist, showcasing her range on the NCIS soundtrack.
+                    </p>
+                </div>
+
+                <div class="group">
+                    <div class="aspect-[4/5] rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl transition-all duration-500 hover:border-zinc-500">
+                        <img src="profile.jpg" alt="Cote de Pablo Portrait" class="w-full h-full object-cover">
+                    </div>
+                    <p class="mt-4 text-[10px] uppercase tracking-widest text-zinc-600 text-center">Official Portrait</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="bg-zinc-950 py-32 px-6 border-t border-zinc-900">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-3xl font-bold uppercase tracking-tighter mb-12">Cinematic Legacy</h3>
+            <div class="group inline-block w-full">
+                <div class="aspect-video bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 transition-all duration-500 hover:border-zinc-500">
+                    <img src="profile.jpg" alt="Cote de Pablo Gallery" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity">
+                </div>
+                <p class="mt-6 text-[10px] uppercase tracking-widest text-zinc-600">Featured Gallery Frame</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-40 text-center border-t border-zinc-900 bg-black">
+        <div class="px-6">
+            <h3 class="text-4xl md:text-6xl font-black mb-12 italic tracking-tighter text-white uppercase">Contact</h3>
+            <p class="text-zinc-500 uppercase tracking-widest text-xs mb-6">For professional inquiries and collaborations</p>
+            
+            <a href="mailto:Yesitsmariacote@gmail.com" class="inline-block group">
+                <span class="text-xl md:text-4xl font-light text-white group-hover:text-zinc-400 transition-colors underline underline-offset-[12px] decoration-zinc-800">
+                    Yesitsmariacote@gmail.com
+                </span>
+            </a>
+            
+            <div class="mt-32 pt-8 border-t border-zinc-900">
+                <p class="text-[10px] text-zinc-700 uppercase tracking-[0.5em]">© 2026 Cote de Pablo | Artist Profile</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
